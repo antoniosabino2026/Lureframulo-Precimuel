@@ -1,0 +1,2276 @@
+/* ==========================================================
+   RESET CSS
+========================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+
+    font-family: var(--font-text);
+
+    font-size: var(--fs-md);
+
+    color: var(--gray-800);
+
+    background: var(--white);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+
+}
+
+
+/* ==========================================================
+   ELEMENTOS GERAIS
+========================================================== */
+
+img{
+
+    width: 100%;
+
+    display: block;
+
+}
+
+a{
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+button,
+input,
+textarea{
+
+    font-family: inherit;
+
+    border: none;
+
+    outline: none;
+
+}
+
+button{
+
+    cursor: pointer;
+
+}
+
+section{
+
+    padding: var(--space-4xl) 0;
+
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width: 90%;
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   TÍTULOS
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family: var(--font-title);
+
+    color: var(--primary-color);
+
+    font-weight: 70;
+
+}
+
+h1{
+
+    font-size: var(--fs-4xl);
+
+}
+
+h2{
+
+    font-size: 16px;
+
+}
+
+h3{
+
+    font-size: var(--fs-xl);
+
+}
+
+p{
+
+    color: var(--gray-600);
+
+}
+
+
+/* ==========================================================
+   BOTÕES
+========================================================== */
+
+.btn-primary{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px 35px;
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    border-radius: var(--radius-md);
+
+    transition: var(--transition);
+
+    font-weight: 600;
+
+}
+
+.btn-primary:hover{
+
+    background: var(--secondary-color);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.btn-secondary{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px 35px;
+
+    border: 2px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    border-radius: var(--radius-md);
+
+    transition: var(--transition);
+
+    font-weight: 600;
+
+}
+
+.btn-secondary:hover{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+}
+
+
+/* ==========================================================
+   TÍTULOS DAS SECÇÕES
+========================================================== */
+
+.section-title{
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.section-title span{
+
+    display: inline-block;
+
+    color: var(--secondary-color);
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+.section-title h2{
+
+    margin-bottom: 20px;
+
+}
+
+.section-title p{
+
+    width: 70%;
+
+    margin: auto;
+
+}
+
+
+/* ==========================================================
+   CLASSES AUXILIARES
+========================================================== */
+
+.center{
+
+    text-align: center;
+
+}
+
+.text-center{
+
+    text-align: center;
+
+}
+
+.mt-1{
+
+    margin-top: var(--space-md);
+
+}
+
+.mt-2{
+
+    margin-top: var(--space-xl);
+
+}
+
+.mt-3{
+
+    margin-top: var(--space-3xl);
+
+}
+
+
+/* ==========================================================
+   ANIMAÇÃO PADRÃO DOS BOTÕES
+========================================================== */
+
+.btn-primary,
+.btn-secondary{
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.btn-primary::after,
+.btn-secondary::after{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(255,255,255,.15);
+
+    transition: .5s;
+
+}
+
+.btn-primary:hover::after,
+.btn-secondary:hover::after{
+
+    left: 100%;
+
+}
+
+
+/* ==========================================================
+   SELEÇÃO DE TEXTO
+========================================================== */
+
+::selection{
+
+    background: var(--secondary-color);
+
+    color: var(--white);
+
+}
+
+
+/* ==========================================================
+   SCROLLBAR (CHROME)
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background: var(--gray-200);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background: var(--primary-color);
+
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background: var(--secondary-color);
+
+}
+
+/* ==========================================================
+   TOP BAR
+========================================================== */
+
+.top-bar{
+
+    height: var(--topbar-height);
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.top-bar .container{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.top-left,
+.top-right{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.top-left span{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: var(--fs-sm);
+
+}
+
+.top-right a{
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: var(--transition);
+
+}
+
+.top-right a:hover{
+
+    background: rgba(255,255,255,.15);
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header{
+
+    width: 100%;
+
+    height: var(--header-height);
+
+    background: var(--white);
+
+    position: sticky;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: var(--z-fixed);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.header .container{
+
+    height: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.logo img{
+
+    width: 65px;
+
+}
+
+.logo-text h2{
+
+    font-size: 1.4rem;
+
+    margin-bottom: 3px;
+
+}
+
+.logo-text p{
+
+    font-size: .85rem;
+
+    color: var(--gray-600);
+
+}
+
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+.main-nav ul{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+.main-nav ul li a{
+
+    font-weight: 600;
+
+    position: relative;
+
+    transition: var(--transition);
+
+}
+
+.main-nav ul li a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--secondary-color);
+
+    transition: var(--transition);
+
+}
+
+.main-nav ul li a:hover{
+
+    color: var(--secondary-color);
+
+}
+
+.main-nav ul li a:hover::after{
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   BOTÕES HEADER
+========================================================== */
+
+.header-buttons{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.btn-login{
+    padding-left: 15px;
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.btn-login:hover{
+
+    color: var(--secondary-color);
+
+}
+
+
+/* ==========================================================
+   MENU MOBILE
+========================================================== */
+
+.menu-toggle{
+
+    display: none;
+
+    font-size: 1.8rem;
+
+    color: var(--primary-color);
+
+    cursor: pointer;
+
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    min-height: calc(100vh - var(--header-height));
+
+    display: flex;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f4f8fc 100%
+    );
+
+}
+
+.hero-container{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.hero-tag{
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: rgba(60,145,230,.15);
+
+    color: var(--secondary-color);
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+}
+
+.hero-content h1{
+
+    margin-bottom: 25px;
+
+    line-height: 1.2;
+
+}
+
+.hero-content p{
+
+    margin-bottom: 35px;
+
+    font-size: var(--fs-lg);
+
+}
+
+
+/* ==========================================================
+   BOTÕES HERO
+========================================================== */
+
+.hero-buttons{
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 50px;
+
+}
+
+
+/* ==========================================================
+   HERO STATS
+========================================================== */
+
+.hero-stats{
+
+    display: flex;
+
+    gap: 50px;
+
+}
+
+.stat h3{
+
+    font-size: 2rem;
+
+    color: var(--secondary-color);
+
+}
+
+.stat p{
+
+    margin-top: 5px;
+
+}
+
+
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+
+.hero-image{
+
+    position: relative;
+
+}
+
+.hero-image img{
+
+    width: 100%;
+
+    animation: float 4s ease-in-out infinite;
+
+}
+
+
+/* ==========================================================
+   FLOAT
+========================================================== */
+
+@keyframes float{
+
+    0%{
+
+        transform: translateY(0);
+
+    }
+
+    50%{
+
+        transform: translateY(-18px);
+
+    }
+
+    100%{
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   SOBRE
+========================================================== */
+
+.sobre{
+
+    background: var(--white);
+
+}
+
+.sobre-container{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+.sobre-image{
+
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.sobre-image img{
+
+    transition: var(--transition-slow);
+
+}
+
+.sobre-image:hover img{
+
+    transform: scale(1.08);
+
+}
+
+.sobre-content h3{
+
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+
+    line-height: 1.3;
+
+}
+
+.sobre-content p{
+
+    margin-bottom: 20px;
+
+    text-align: justify;
+
+}
+
+
+/* ==========================================================
+   LISTA
+========================================================== */
+
+.sobre-list{
+
+    margin: 35px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+
+}
+
+.sobre-list .item{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.sobre-list i{
+
+    color: var(--accent-color);
+
+    font-size: 1.2rem;
+
+}
+
+.sobre-list span{
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   ESTATÍSTICAS
+========================================================== */
+
+.estatisticas{
+
+    background: var(--primary-color);
+
+    padding: 80px 0;
+
+}
+
+.estatisticas .container{
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
+}
+
+.estatistica-card{
+
+    background: rgba(255,255,255,.08);
+
+    border-radius: var(--radius-lg);
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    transition: var(--transition);
+
+    backdrop-filter: blur(8px);
+
+}
+
+.estatistica-card:hover{
+
+    transform: translateY(-10px);
+
+    background: rgba(255,255,255,.15);
+
+}
+
+.estatistica-card i{
+
+    font-size: 3rem;
+
+    color: var(--white);
+
+    margin-bottom: 20px;
+
+}
+
+.estatistica-card h2{
+
+    color: var(--white);
+
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+
+}
+
+.estatistica-card p{
+
+    color: rgba(255,255,255,.85);
+
+}
+
+
+/* ==========================================================
+   ANIMAÇÃO DOS CARDS
+========================================================== */
+
+.estatistica-card{
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.estatistica-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: -100%;
+
+    width: 200%;
+
+    height: 200%;
+
+    background: linear-gradient(
+
+        45deg,
+
+        transparent,
+
+        rgba(255,255,255,.08),
+
+        transparent
+
+    );
+
+    transform: rotate(25deg);
+
+    transition: .8s;
+
+}
+
+.estatistica-card:hover::before{
+
+    top: 100%;
+
+    left: 100%;
+
+}
+
+/* ==========================================================
+   CURSOS
+========================================================== */
+
+.cursos{
+
+    background: var(--gray-100);
+
+}
+
+.cards-cursos{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+}
+
+.curso-card{
+
+    background: var(--white);
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+}
+
+.curso-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.curso-card img{
+
+    height: 240px;
+
+    object-fit: cover;
+
+    transition: var(--transition-slow);
+
+}
+
+.curso-card:hover img{
+
+    transform: scale(1.08);
+
+}
+
+.curso-info{
+
+    padding: 30px;
+
+}
+
+.curso-info h3{
+
+    margin-bottom: 15px;
+
+}
+
+.curso-info p{
+
+    margin-bottom: 20px;
+
+    text-align: justify;
+
+}
+
+.curso-info a{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--secondary-color);
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.curso-info a:hover{
+
+    color: var(--primary-color);
+
+}
+
+
+/* ==========================================================
+   BOTÃO DOS CURSOS
+========================================================== */
+
+.cursos .center{
+
+    margin-top: 50px;
+
+}
+
+
+/* ==========================================================
+   DIFERENCIAIS
+========================================================== */
+
+.diferenciais{
+
+    background: var(--white);
+
+}
+
+.diferenciais-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
+}
+
+.diferenciais .card{
+
+    background: var(--white);
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+    border-top: 4px solid transparent;
+
+}
+
+.diferenciais .card:hover{
+
+    transform: translateY(-10px);
+
+    border-top: 4px solid var(--secondary-color);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.diferenciais .card i{
+
+    font-size: 3rem;
+
+    color: var(--secondary-color);
+
+    margin-bottom: 20px;
+
+}
+
+.diferenciais .card h3{
+
+    margin-bottom: 15px;
+
+}
+
+.diferenciais .card p{
+
+    color: var(--gray-600);
+
+}
+
+
+/* ==========================================================
+   ANIMAÇÃO DOS CARDS
+========================================================== */
+
+.diferenciais .card{
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.diferenciais .card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.35),
+
+        transparent
+
+    );
+
+    transition: .8s;
+
+}
+
+.diferenciais .card:hover::before{
+
+    left: 100%;
+
+}
+
+
+/* ==========================================================
+   PEQUENOS AJUSTES
+========================================================== */
+
+.curso-card,
+.diferenciais .card{
+
+    cursor: pointer;
+
+}
+
+.curso-card img{
+
+    border-bottom: 1px solid var(--gray-200);
+
+}
+/* ==========================================================
+   SERVIÇOS
+========================================================== */
+
+.servicos{
+
+    background: var(--gray-100);
+
+}
+
+.servicos-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
+}
+
+.servico-card{
+
+    background: var(--white);
+
+    padding: 40px 30px;
+
+    border-radius: var(--radius-lg);
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.servico-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.servico-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: var(--secondary-color);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: var(--transition);
+
+}
+
+.servico-card:hover::before{
+
+    transform: scaleX(1);
+
+}
+
+.servico-card i{
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: auto;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    background: rgba(60,145,230,.12);
+
+    color: var(--secondary-color);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 2.3rem;
+
+}
+
+.servico-card h3{
+
+    margin-bottom: 18px;
+
+}
+
+.servico-card p{
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   NOTÍCIAS
+========================================================== */
+
+.noticias{
+
+    background: var(--white);
+
+}
+
+.noticias-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 35px;
+
+}
+
+.noticia-card{
+
+    background: var(--white);
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+}
+
+.noticia-card:hover{
+
+    transform: translateY(-12px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.noticia-card img{
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    transition: var(--transition-slow);
+
+}
+
+.noticia-card:hover img{
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================================================
+   CONTEÚDO DA NOTÍCIA
+========================================================== */
+
+.noticia-content{
+
+    padding: 30px;
+
+}
+
+.noticia-content span{
+
+    display: inline-block;
+
+    color: var(--secondary-color);
+
+    font-size: var(--fs-sm);
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.noticia-content h3{
+
+    margin-bottom: 18px;
+
+    line-height: 1.4;
+
+}
+
+.noticia-content p{
+
+    margin-bottom: 25px;
+
+    text-align: justify;
+
+}
+
+.noticia-content a{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--secondary-color);
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.noticia-content a::after{
+
+    content: "→";
+
+    transition: var(--transition);
+
+}
+
+.noticia-content a:hover{
+
+    color: var(--primary-color);
+
+}
+
+.noticia-content a:hover::after{
+
+    transform: translateX(6px);
+
+}
+
+
+/* ==========================================================
+   HOVER GERAL
+========================================================== */
+
+.servico-card,
+.noticia-card{
+
+    cursor: pointer;
+
+}
+
+/* ==========================================================
+   GALERIA
+========================================================== */
+
+.galeria{
+
+    background: var(--gray-100);
+
+}
+
+.galeria-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+
+}
+
+.galeria-grid img{
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-lg);
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.galeria-grid img:hover{
+
+    transform: scale(1.05);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+
+/* ==========================================================
+   PARCEIROS
+========================================================== */
+
+.parceiros{
+
+    background: var(--white);
+
+}
+
+.parceiros-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+
+    gap: 30px;
+
+    align-items: center;
+
+}
+
+.parceiros-grid img{
+
+    width: 100%;
+
+    max-width: 160px;
+
+    margin: auto;
+
+    filter: grayscale(100%);
+
+    opacity: .7;
+
+    transition: var(--transition);
+
+}
+
+.parceiros-grid img:hover{
+
+    filter: grayscale(0);
+
+    opacity: 1;
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================================================
+   EFEITOS EXTRAS
+========================================================== */
+
+.galeria-grid{
+
+    overflow: hidden;
+
+}
+
+.galeria-grid img{
+
+    display: block;
+
+}
+
+.parceiros-grid img{
+
+    object-fit: contain;
+
+}
+
+/* ==========================================================
+   TESTEMUNHOS
+========================================================== */
+
+.testemunhos{
+
+    background: var(--gray-100);
+
+}
+
+.testemunhos-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 35px;
+
+}
+
+.testemunho-card{
+
+    background: var(--white);
+
+    padding: 40px 30px;
+
+    border-radius: var(--radius-lg);
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.testemunho-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.testemunho-card::before{
+
+    content: "\201C";
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 25px;
+
+    font-size: 5rem;
+
+    color: rgba(60,145,230,.08);
+
+    font-family: serif;
+
+}
+
+.testemunho-card img{
+
+    width: 110px;
+
+    height: 110px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin: auto;
+
+    margin-bottom: 20px;
+
+    border: 5px solid var(--gray-200);
+
+}
+
+.testemunho-card h3{
+
+    margin-bottom: 8px;
+
+}
+
+.testemunho-card small{
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: var(--secondary-color);
+
+    font-weight: 600;
+
+}
+
+.testemunho-card p{
+
+    font-style: italic;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   CALL TO ACTION
+========================================================== */
+
+.cta{
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color: var(--white);
+
+}
+
+.cta-content{
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+.cta-content h2{
+
+    color: var(--white);
+
+    margin-bottom: 25px;
+
+    font-size: 2.8rem;
+
+}
+
+.cta-content p{
+
+    color: rgba(255,255,255,.90);
+
+    font-size: var(--fs-lg);
+
+    margin-bottom: 40px;
+
+}
+
+.cta-buttons{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+
+/* ==========================================================
+   BOTÕES DO CTA
+========================================================== */
+
+.cta .btn-primary{
+
+    background: var(--white);
+
+    color: var(--primary-color);
+
+}
+
+.cta .btn-primary:hover{
+
+    background: var(--gray-100);
+
+}
+
+.cta .btn-secondary{
+
+    border: 2px solid var(--white);
+
+    color: var(--white);
+
+}
+
+.cta .btn-secondary:hover{
+
+    background: var(--white);
+
+    color: var(--primary-color);
+
+}
+
+
+/* ==========================================================
+   EFEITO DE ENTRADA
+========================================================== */
+
+.testemunho-card,
+.cta-content{
+
+    animation: fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   CONTACTO
+========================================================== */
+
+.contacto{
+
+    background: var(--white);
+
+}
+
+.contacto-container{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.3fr;
+
+    gap: 60px;
+
+    align-items: start;
+
+}
+
+
+/* ==========================================================
+   INFORMAÇÕES
+========================================================== */
+
+.contacto-info{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+.info-card{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: var(--gray-100);
+
+    padding: 25px;
+
+    border-radius: var(--radius-lg);
+
+    transition: var(--transition);
+
+}
+
+.info-card:hover{
+
+    transform: translateX(10px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.info-card i{
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: var(--secondary-color);
+
+    color: var(--white);
+
+    border-radius: 50%;
+
+    font-size: 1.5rem;
+
+}
+
+.info-card h3{
+
+    margin-bottom: 5px;
+
+}
+
+
+/* ==========================================================
+   FORMULÁRIO
+========================================================== */
+
+.contact-form{
+
+    display: grid;
+
+    gap: 20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width: 100%;
+
+    padding: 16px 20px;
+
+    border: 1px solid var(--gray-300);
+
+    border-radius: var(--radius-md);
+
+    font-size: var(--fs-md);
+
+    transition: var(--transition);
+
+}
+
+.contact-form textarea{
+
+    resize: vertical;
+
+    min-height: 180px;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color: var(--secondary-color);
+
+    box-shadow: 0 0 0 4px rgba(60,145,230,.15);
+
+}
+
+.contact-form button{
+
+    justify-self: start;
+
+}
+
+
+/* ==========================================================
+   MAPA
+========================================================== */
+
+.mapa{
+
+    padding: 0;
+
+}
+
+.mapa iframe{
+
+    width: 100%;
+
+    height: 450px;
+
+    border: none;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    padding-top: 70px;
+
+}
+
+.footer-grid{
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 50px;
+
+}
+
+.footer-col img{
+
+    width: 90px;
+    
+    margin-bottom: 20px;
+
+}
+
+.footer-col h3{
+
+    color: var(--white);
+
+    margin-bottom: 20px;
+
+}
+
+.footer-col p{
+
+    color: rgba(255,255,255,.80);
+
+    line-height: 1.8;
+
+}
+
+.footer-col ul{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.footer-col ul li a{
+
+    color: rgba(255,255,255,.80);
+
+    transition: var(--transition);
+
+}
+
+.footer-col ul li a:hover{
+
+    color: var(--white);
+
+    padding-left: 8px;
+
+}
+
+
+/* ==========================================================
+   REDES SOCIAIS
+========================================================== */
+
+.footer-social{
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+.footer-social a{
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.10);
+
+    transition: var(--transition);
+
+}
+
+.footer-social a:hover{
+
+    background: var(--secondary-color);
+
+    transform: translateY(-5px);
+
+}
+
+
+/* ==========================================================
+   FOOTER BOTTOM
+========================================================== */
+
+.footer-bottom{
+
+    text-align: center;
+
+    padding: 25px 0;
+
+    border-top: 1px solid rgba(255,255,255,.15);
+
+}
+
+.footer-bottom p{
+
+    color: rgba(255,255,255,.70);
+
+    font-size: var(--fs-sm);
+
+}
+
+
+/* ==========================================================
+   BOTÃO VOLTAR AO TOPO
+========================================================== */
+
+#backToTop{
+
+    position: fixed;
+
+    right: 30px;
+
+    bottom: 30px;
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: var(--secondary-color);
+
+    color: var(--white);
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    box-shadow: var(--shadow-lg);
+
+    transition: var(--transition);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    z-index: var(--z-fixed);
+
+}
+
+#backToTop.show{
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+#backToTop:hover{
+
+    background: var(--primary-color);
+
+    transform: translateY(-8px);
+
+}
+
+
+/* ==========================================================
+   HEADER STICKY
+========================================================== */
+
+.header.sticky{
+
+    height: 75px;
+
+    box-shadow: var(--shadow-lg);
+
+    transition: var(--transition);
+
+}
+
+
+/* ==========================================================
+   MENU MOBILE
+========================================================== */
+
+.main-nav.active{
+
+    display: block;
+
+}
+
+/* ==========================================================
+   FIM DO STYLE.CSS
+========================================================== */
