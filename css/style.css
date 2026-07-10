@@ -112,7 +112,7 @@ h6{
 
     color: var(--primary-color);
 
-    font-weight: 70;
+    font-weight: 700;
 
 }
 
@@ -153,7 +153,7 @@ p{
 
     justify-content: center;
 
-    padding: 15px 35px;
+    padding: 5px 25px;
 
     background: var(--primary-color);
 
@@ -167,6 +167,9 @@ p{
 
 }
 
+.header-buttons .btn-primary{
+        width: 170px;
+    }
 .btn-primary:hover{
 
     background: var(--secondary-color);
@@ -507,9 +510,9 @@ p{
 
 .logo-text h2{
 
-    font-size: 1.4rem;
+    font-size: 16px;
 
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 
 }
 
@@ -537,6 +540,7 @@ p{
 }
 
 .main-nav ul li a{
+    margin-left: 3px;
 
     font-weight: 600;
 
