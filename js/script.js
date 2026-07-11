@@ -10,34 +10,65 @@ const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 
 
-/* ==========================================================
-   MENU MOBILE
-========================================================== */
+/*===========================================
+ELEMENTOS
+===========================================*/
 
-menuToggle.addEventListener("click", () => {
+const menuToggle = document.getElementById("menuToggle");
 
-    mainNav.classList.toggle("active");
+const closeMenu = document.getElementById("closeMenu");
 
-    menuToggle.classList.toggle("active");
+const mainNav = document.getElementById("mainNav");
 
-});
+const overlay = document.getElementById("overlay");
 
 
-/* ==========================================================
-   FECHAR MENU AO CLICAR NUM LINK
-========================================================== */
+/*===========================================
+ABRIR MENU
+===========================================*/
 
-const menuLinks = document.querySelectorAll(".main-nav a");
+function openMenu(){
 
-menuLinks.forEach(link => {
+    mainNav.classList.add("active");
 
-    link.addEventListener("click", () => {
+    overlay.classList.add("active");
 
-        mainNav.classList.remove("active");
+    document.body.style.overflow="hidden";
 
-        menuToggle.classList.remove("active");
+}
 
-    });
+
+/*===========================================
+FECHAR MENU
+===========================================*/
+
+function closeNav(){
+
+    mainNav.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+    document.body.style.overflow="";
+
+}
+
+
+menuToggle.addEventListener("click",openMenu);
+
+closeMenu.addEventListener("click",closeNav);
+
+overlay.addEventListener("click",closeNav);
+
+
+/*===========================================
+LINKS
+===========================================*/
+
+document.querySelectorAll(".main-nav a")
+
+.forEach(link=>{
+
+    link.addEventListener("click",closeNav);
 
 });
 

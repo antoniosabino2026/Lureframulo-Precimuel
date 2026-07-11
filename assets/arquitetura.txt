@@ -1,0 +1,49 @@
+LUREFRAMULO/
+│
+├── index.html
+│
+├── pages/
+│   ├── sobre.html
+│   ├── cursos.html
+│   ├── noticias.html
+│   ├── contacto.html
+│   ├── inscricao.html
+│   └── estudante.html
+│
+├── assets/
+│   │
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── about/
+│   │   ├── courses/
+│   │   ├── services/
+│   │   ├── gallery/
+│   │   ├── news/
+│   │   ├── testimonials/
+│   │   ├── partners/
+│   │   ├── icons/
+│   │   └── backgrounds/
+│   │
+│   ├── logos/
+│   │
+│   ├── videos/
+│   │
+│   ├── documents/
+│   │
+│   └── favicon/
+│
+├── css/
+│   ├── variables.css
+│   ├── style.css
+│   ├── responsive.css
+│   └── animations.css
+│
+├── js/
+│   ├── script.js
+│   ├── menu.js
+│   ├── scroll.js
+│   ├── counter.js
+│   ├── slider.js
+│   └── gallery.js
+│
+└── README.md

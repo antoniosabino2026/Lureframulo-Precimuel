@@ -1,0 +1,43 @@
+🏗️ O plano que proponho
+
+Vamos construir o projeto como se estivéssemos numa software house.
+
+Fase 1 ✅
+HTML
+CSS
+Responsividade
+
+Concluída.
+
+Fase 2 🔥
+
+Melhorar a arquitetura.
+
+✅ Design System
+✅ Componentes reutilizáveis
+✅ JavaScript modular
+✅ Animações profissionais
+✅ Performance
+Fase 3
+
+Backend
+
+PHP
+MySQL
+Área do estudante
+Painel administrativo
+Login
+Inscrições
+Notícias dinâmicas
+Upload de imagens
+Fase 4
+
+Deploy
+
+Domínio .ao
+SSL
+SEO
+Google Maps
+Google Analytics
+Formulário funcional
+E-mails

@@ -615,22 +615,141 @@ p{
 }
 
 
-/* ==========================================================
-   MENU MOBILE
-========================================================== */
-
-.menu-toggle{
-
+/*==========================================================
+MENU MOBILE PREMIUM
+==========================================================*/
+.menu-toggle {
     display: none;
-
     font-size: 1.8rem;
-
     color: var(--primary-color);
-
     cursor: pointer;
+}
+
+.overlay{
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s;
+
+    z-index: 998;
 
 }
 
+.overlay.active{
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+.close-menu{
+
+    display: none;
+
+}
+
+@media(max-width:992px){
+
+    .main-nav{
+
+        position: fixed;
+
+        top: 0;
+
+        right: -100%;
+
+        width: 320px;
+
+        height: 100vh;
+
+        background: white;
+
+        padding: 100px 40px;
+
+        transition: .4s ease;
+
+        box-shadow: -5px 0 30px rgba(0,0,0,.15);
+
+        z-index:999;
+
+    }
+
+    .main-nav.active{
+
+        right:0;
+
+    }
+
+    .main-nav ul{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:30px;
+
+    }
+
+    .main-nav ul li{
+
+        width:100%;
+
+    }
+
+    .main-nav ul li a{
+
+        display:block;
+
+        width:100%;
+
+        font-size:1.15rem;
+
+        padding:10px 0;
+
+    }
+
+    .close-menu{
+
+        display:flex;
+
+        position:absolute;
+
+        top:25px;
+
+        right:25px;
+
+        width:45px;
+
+        height:45px;
+
+        border:none;
+
+        border-radius:50%;
+
+        background:var(--primary-color);
+
+        color:white;
+
+        justify-content:center;
+
+        align-items:center;
+
+        cursor:pointer;
+
+        font-size:1.3rem;
+
+    }
+
+}
 
 /* ==========================================================
    HERO
@@ -2269,11 +2388,6 @@ p{
    MENU MOBILE
 ========================================================== */
 
-.main-nav.active{
-
-    display: block;
-
-}
 
 /* ==========================================================
    FIM DO STYLE.CSS

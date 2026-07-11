@@ -1,0 +1,7 @@
+css/
+│
+├── variables.css        ✅
+├── style.css            ✅
+├── responsive.css       ✅
+├── animations.css
+└── utilities.css
