@@ -7,15 +7,6 @@ const header = document.querySelector(".header");
 
 const menuToggle = document.getElementById("menuToggle");
 
-const mainNav = document.getElementById("mainNav");
-
-
-/*===========================================
-ELEMENTOS
-===========================================*/
-
-const menuToggle = document.getElementById("menuToggle");
-
 const closeMenu = document.getElementById("closeMenu");
 
 const mainNav = document.getElementById("mainNav");
@@ -32,6 +23,8 @@ function openMenu(){
     mainNav.classList.add("active");
 
     overlay.classList.add("active");
+    
+    
 
     document.body.style.overflow="hidden";
 

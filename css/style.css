@@ -643,13 +643,7 @@ MENU MOBILE PREMIUM
 
 }
 
-.overlay.active{
 
-    opacity: 1;
-
-    visibility: visible;
-
-}
 
 .close-menu{
 
@@ -662,6 +656,8 @@ MENU MOBILE PREMIUM
     .main-nav{
 
         position: fixed;
+
+        overflow: auto;
 
         top: 0;
 
