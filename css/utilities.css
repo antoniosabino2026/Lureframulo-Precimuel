@@ -1456,3 +1456,1250 @@
     background-repeat:no-repeat;
 
 }
+
+/* ==========================================================
+   BORDER
+========================================================== */
+
+.border{
+
+    border:1px solid var(--gray-300);
+
+}
+
+.border-0{
+
+    border:none;
+
+}
+
+.border-top{
+
+    border-top:1px solid var(--gray-300);
+
+}
+
+.border-bottom{
+
+    border-bottom:1px solid var(--gray-300);
+
+}
+
+.border-left{
+
+    border-left:1px solid var(--gray-300);
+
+}
+
+.border-right{
+
+    border-right:1px solid var(--gray-300);
+
+}
+
+.border-primary{
+
+    border:1px solid var(--primary-color);
+
+}
+
+.border-secondary{
+
+    border:1px solid var(--secondary-color);
+
+}
+
+.border-white{
+
+    border:1px solid var(--white);
+
+}
+
+
+/* ==========================================================
+   BORDER RADIUS
+========================================================== */
+
+.rounded-none{
+
+    border-radius:0;
+
+}
+
+.rounded-sm{
+
+    border-radius:var(--radius-sm);
+
+}
+
+.rounded{
+
+    border-radius:var(--radius-md);
+
+}
+
+.rounded-lg{
+
+    border-radius:var(--radius-lg);
+
+}
+
+.rounded-xl{
+
+    border-radius:var(--radius-xl);
+
+}
+
+.rounded-full{
+
+    border-radius:9999px;
+
+}
+
+.circle{
+
+    border-radius:50%;
+
+}
+
+
+/* ==========================================================
+   SHADOWS
+========================================================== */
+
+.shadow-none{
+
+    box-shadow:none;
+
+}
+
+.shadow-sm{
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.shadow{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.shadow-xl{
+
+    box-shadow:0 20px 50px rgba(0,0,0,.20);
+
+}
+
+
+/* ==========================================================
+   HOVER SHADOWS
+========================================================== */
+
+.hover-shadow{
+
+    transition:var(--transition);
+
+}
+
+.hover-shadow:hover{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.hover-lift{
+
+    transition:var(--transition);
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==========================================================
+   CURSOR
+========================================================== */
+
+.cursor-pointer{
+
+    cursor:pointer;
+
+}
+
+.cursor-default{
+
+    cursor:default;
+
+}
+
+.cursor-move{
+
+    cursor:move;
+
+}
+
+.cursor-not-allowed{
+
+    cursor:not-allowed;
+
+}
+
+.cursor-text{
+
+    cursor:text;
+
+}
+
+
+/* ==========================================================
+   OVERFLOW
+========================================================== */
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.overflow-auto{
+
+    overflow:auto;
+
+}
+
+.overflow-visible{
+
+    overflow:visible;
+
+}
+
+
+/* ==========================================================
+   OBJECT FIT
+========================================================== */
+
+.object-cover{
+
+    object-fit:cover;
+
+}
+
+.object-contain{
+
+    object-fit:contain;
+
+}
+
+.object-fill{
+
+    object-fit:fill;
+
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.img-fluid{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.img-cover{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/* ==========================================================
+   TRANSITIONS
+========================================================== */
+
+.transition{
+
+    transition:var(--transition);
+
+}
+
+.transition-fast{
+
+    transition:.2s;
+
+}
+
+.transition-slow{
+
+    transition:.6s;
+
+}
+
+
+/* ==========================================================
+   DISPLAY
+========================================================== */
+
+.d-none{
+
+    display:none;
+
+}
+
+.d-block{
+
+    display:block;
+
+}
+
+.d-inline{
+
+    display:inline;
+
+}
+
+.d-inline-block{
+
+    display:inline-block;
+
+}
+
+.d-flex{
+
+    display:flex;
+
+}
+
+.d-grid{
+
+    display:grid;
+
+}
+
+
+/* ==========================================================
+   POSITION
+========================================================== */
+
+.position-static{
+
+    position:static;
+
+}
+
+.position-relative{
+
+    position:relative;
+
+}
+
+.position-absolute{
+
+    position:absolute;
+
+}
+
+.position-fixed{
+
+    position:fixed;
+
+}
+
+.position-sticky{
+
+    position:sticky;
+
+}
+
+
+/* ==========================================================
+   TOP
+========================================================== */
+
+.top-0{
+
+    top:0;
+
+}
+
+.top-50{
+
+    top:50%;
+
+}
+
+.top-100{
+
+    top:100%;
+
+}
+
+
+/* ==========================================================
+   LEFT
+========================================================== */
+
+.left-0{
+
+    left:0;
+
+}
+
+.left-50{
+
+    left:50%;
+
+}
+
+.left-100{
+
+    left:100%;
+
+}
+
+
+/* ==========================================================
+   RIGHT
+========================================================== */
+
+.right-0{
+
+    right:0;
+
+}
+
+.right-50{
+
+    right:50%;
+
+}
+
+.right-100{
+
+    right:100%;
+
+}
+
+
+/* ==========================================================
+   BOTTOM
+========================================================== */
+
+.bottom-0{
+
+    bottom:0;
+
+}
+
+.bottom-50{
+
+    bottom:50%;
+
+}
+
+.bottom-100{
+
+    bottom:100%;
+
+}
+
+
+/* ==========================================================
+   Z-INDEX
+========================================================== */
+
+.z-0{
+
+    z-index:0;
+
+}
+
+.z-1{
+
+    z-index:1;
+
+}
+
+.z-10{
+
+    z-index:10;
+
+}
+
+.z-50{
+
+    z-index:50;
+
+}
+
+.z-100{
+
+    z-index:100;
+
+}
+
+.z-999{
+
+    z-index:999;
+
+}
+
+.z-max{
+
+    z-index:9999;
+
+}
+
+
+/* ==========================================================
+   VISIBILITY
+========================================================== */
+
+.visible{
+
+    visibility:visible;
+
+}
+
+.invisible{
+
+    visibility:hidden;
+
+}
+
+
+/* ==========================================================
+   POINTER EVENTS
+========================================================== */
+
+.pointer-none{
+
+    pointer-events:none;
+
+}
+
+.pointer-auto{
+
+    pointer-events:auto;
+
+}
+
+
+/* ==========================================================
+   USER SELECT
+========================================================== */
+
+.select-none{
+
+    user-select:none;
+
+}
+
+.select-text{
+
+    user-select:text;
+
+}
+
+.select-all{
+
+    user-select:all;
+
+}
+
+
+/* ==========================================================
+   OPACITY
+========================================================== */
+
+.opacity-0{
+
+    opacity:0;
+
+}
+
+.opacity-25{
+
+    opacity:.25;
+
+}
+
+.opacity-50{
+
+    opacity:.5;
+
+}
+
+.opacity-75{
+
+    opacity:.75;
+
+}
+
+.opacity-100{
+
+    opacity:1;
+
+}
+
+
+/* ==========================================================
+   TRANSFORM
+========================================================== */
+
+.rotate-0{
+
+    transform:rotate(0deg);
+
+}
+
+.rotate-45{
+
+    transform:rotate(45deg);
+
+}
+
+.rotate-90{
+
+    transform:rotate(90deg);
+
+}
+
+.scale-90{
+
+    transform:scale(.9);
+
+}
+
+.scale-100{
+
+    transform:scale(1);
+
+}
+
+.scale-110{
+
+    transform:scale(1.1);
+
+}
+
+
+/* ==========================================================
+   ASPECT RATIO
+========================================================== */
+
+.aspect-square{
+
+    aspect-ratio:1/1;
+
+}
+
+.aspect-video{
+
+    aspect-ratio:16/9;
+
+}
+
+.aspect-portrait{
+
+    aspect-ratio:3/4;
+
+}
+
+
+/* ==========================================================
+   FLOAT
+========================================================== */
+
+.float-left{
+
+    float:left;
+
+}
+
+.float-right{
+
+    float:right;
+
+}
+
+.float-none{
+
+    float:none;
+
+}
+
+
+/* ==========================================================
+   CLEARFIX
+========================================================== */
+
+.clearfix::after{
+
+    content:"";
+
+    display:block;
+
+    clear:both;
+
+}
+
+
+/* ==========================================================
+   OVERFLOW
+========================================================== */
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.overflow-auto{
+
+    overflow:auto;
+
+}
+
+.overflow-scroll{
+
+    overflow:scroll;
+
+}
+
+.overflow-visible{
+
+    overflow:visible;
+
+}
+
+
+/* ==========================================================
+   VISIBILITY
+========================================================== */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.visible{
+
+    display:block !important;
+
+}
+
+.invisible{
+
+    visibility:hidden;
+
+}
+
+
+/* ==========================================================
+   SCREEN READER
+========================================================== */
+
+.sr-only{
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    padding:0;
+
+    margin:-1px;
+
+    overflow:hidden;
+
+    clip:rect(0,0,0,0);
+
+    white-space:nowrap;
+
+    border:0;
+
+}
+
+
+/* ==========================================================
+   POINTER EVENTS
+========================================================== */
+
+.pointer-none{
+
+    pointer-events:none;
+
+}
+
+.pointer-auto{
+
+    pointer-events:auto;
+
+}
+
+
+/* ==========================================================
+   USER SELECT
+========================================================== */
+
+.select-none{
+
+    user-select:none;
+
+}
+
+.select-all{
+
+    user-select:all;
+
+}
+
+.select-text{
+
+    user-select:text;
+
+}
+
+
+/* ==========================================================
+   RESIZE
+========================================================== */
+
+.resize-none{
+
+    resize:none;
+
+}
+
+.resize-horizontal{
+
+    resize:horizontal;
+
+}
+
+.resize-vertical{
+
+    resize:vertical;
+
+}
+
+.resize{
+
+    resize:both;
+
+}
+
+
+/* ==========================================================
+   CURSOR
+========================================================== */
+
+.cursor-pointer{
+
+    cursor:pointer;
+
+}
+
+.cursor-default{
+
+    cursor:default;
+
+}
+
+.cursor-not-allowed{
+
+    cursor:not-allowed;
+
+}
+
+.cursor-wait{
+
+    cursor:wait;
+
+}
+
+
+/* ==========================================================
+   TEXT SELECTION
+========================================================== */
+
+.no-select{
+
+    -webkit-user-select:none;
+
+    -moz-user-select:none;
+
+    user-select:none;
+
+}
+
+
+/* ==========================================================
+   IMAGE HELPERS
+========================================================== */
+
+.img-responsive{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.img-circle{
+
+    border-radius:50%;
+
+}
+
+.img-rounded{
+
+    border-radius:var(--radius-lg);
+
+}
+
+
+/* ==========================================================
+   OBJECT POSITION
+========================================================== */
+
+.object-center{
+
+    object-position:center;
+
+}
+
+.object-top{
+
+    object-position:top;
+
+}
+
+.object-bottom{
+
+    object-position:bottom;
+
+}
+
+.object-left{
+
+    object-position:left;
+
+}
+
+.object-right{
+
+    object-position:right;
+
+}
+
+
+/* ==========================================================
+   FLOAT
+========================================================== */
+
+.float-left{
+
+    float:left;
+
+}
+
+.float-right{
+
+    float:right;
+
+}
+
+.float-none{
+
+    float:none;
+
+}
+
+
+/* ==========================================================
+   CLEARFIX
+========================================================== */
+
+.clearfix::after{
+
+    content:"";
+
+    display:block;
+
+    clear:both;
+
+}
+
+
+/* ==========================================================
+   OVERFLOW
+========================================================== */
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.overflow-auto{
+
+    overflow:auto;
+
+}
+
+.overflow-scroll{
+
+    overflow:scroll;
+
+}
+
+.overflow-visible{
+
+    overflow:visible;
+
+}
+
+
+/* ==========================================================
+   VISIBILITY
+========================================================== */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.visible{
+
+    display:block !important;
+
+}
+
+.invisible{
+
+    visibility:hidden;
+
+}
+
+
+/* ==========================================================
+   SCREEN READER
+========================================================== */
+
+.sr-only{
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    padding:0;
+
+    margin:-1px;
+
+    overflow:hidden;
+
+    clip:rect(0,0,0,0);
+
+    white-space:nowrap;
+
+    border:0;
+
+}
+
+
+/* ==========================================================
+   POINTER EVENTS
+========================================================== */
+
+.pointer-none{
+
+    pointer-events:none;
+
+}
+
+.pointer-auto{
+
+    pointer-events:auto;
+
+}
+
+
+/* ==========================================================
+   USER SELECT
+========================================================== */
+
+.select-none{
+
+    user-select:none;
+
+}
+
+.select-all{
+
+    user-select:all;
+
+}
+
+.select-text{
+
+    user-select:text;
+
+}
+
+
+/* ==========================================================
+   RESIZE
+========================================================== */
+
+.resize-none{
+
+    resize:none;
+
+}
+
+.resize-horizontal{
+
+    resize:horizontal;
+
+}
+
+.resize-vertical{
+
+    resize:vertical;
+
+}
+
+.resize{
+
+    resize:both;
+
+}
+
+
+/* ==========================================================
+   CURSOR
+========================================================== */
+
+.cursor-pointer{
+
+    cursor:pointer;
+
+}
+
+.cursor-default{
+
+    cursor:default;
+
+}
+
+.cursor-not-allowed{
+
+    cursor:not-allowed;
+
+}
+
+.cursor-wait{
+
+    cursor:wait;
+
+}
+
+
+/* ==========================================================
+   TEXT SELECTION
+========================================================== */
+
+.no-select{
+
+    -webkit-user-select:none;
+
+    -moz-user-select:none;
+
+    user-select:none;
+
+}
+
+
+/* ==========================================================
+   IMAGE HELPERS
+========================================================== */
+
+.img-responsive{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.img-circle{
+
+    border-radius:50%;
+
+}
+
+.img-rounded{
+
+    border-radius:var(--radius-lg);
+
+}
+
+
+/* ==========================================================
+   OBJECT POSITION
+========================================================== */
+
+.object-center{
+
+    object-position:center;
+
+}
+
+.object-top{
+
+    object-position:top;
+
+}
+
+.object-bottom{
+
+    object-position:bottom;
+
+}
+
+.object-left{
+
+    object-position:left;
+
+}
+
+.object-right{
+
+    object-position:right;
+
+}
