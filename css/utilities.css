@@ -1,14 +1,382 @@
-.container
-.grid
-.flex
-.hidden
-.text-center
-.mb-1
-.mb-2
-.mb-3
-.mt-1
-.mt-2
-.mt-3
-.w-100
-.rounded
-.shadow
+/* ==========================================================
+   CONTAINERS
+========================================================== */
+
+.container{
+
+    width: min(1200px, 90%);
+
+    margin-inline: auto;
+
+}
+
+.container-fluid{
+
+    width: 100%;
+
+    padding-inline: 20px;
+
+}
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.section{
+
+    padding-block: 100px;
+
+}
+
+.section-sm{
+
+    padding-block: 70px;
+
+}
+
+.section-lg{
+
+    padding-block: 140px;
+
+}
+
+
+/* ==========================================================
+   WIDTH
+========================================================== */
+
+.w-100{
+
+    width:100%;
+
+}
+
+.w-auto{
+
+    width:auto;
+
+}
+
+.max-content{
+
+    max-width:max-content;
+
+}
+
+
+/* ==========================================================
+   HEIGHT
+========================================================== */
+
+.h-100{
+
+    height:100%;
+
+}
+
+.min-vh{
+
+    min-height:100vh;
+
+}
+
+/* ==========================================================
+   FLEXBOX
+========================================================== */
+
+.flex{
+
+    display: flex;
+
+}
+
+.inline-flex{
+
+    display: inline-flex;
+
+}
+
+
+/* ==========================================================
+   DIREÇÃO
+========================================================== */
+
+.flex-row{
+
+    flex-direction: row;
+
+}
+
+.flex-column{
+
+    flex-direction: column;
+
+}
+
+.flex-row-reverse{
+
+    flex-direction: row-reverse;
+
+}
+
+.flex-column-reverse{
+
+    flex-direction: column-reverse;
+
+}
+
+
+/* ==========================================================
+   JUSTIFY CONTENT
+========================================================== */
+
+.justify-start{
+
+    justify-content: flex-start;
+
+}
+
+.justify-center{
+
+    justify-content: center;
+
+}
+
+.justify-end{
+
+    justify-content: flex-end;
+
+}
+
+.justify-between{
+
+    justify-content: space-between;
+
+}
+
+.justify-around{
+
+    justify-content: space-around;
+
+}
+
+.justify-evenly{
+
+    justify-content: space-evenly;
+
+}
+
+
+/* ==========================================================
+   ALIGN ITEMS
+========================================================== */
+
+.align-start{
+
+    align-items: flex-start;
+
+}
+
+.align-center{
+
+    align-items: center;
+
+}
+
+.align-end{
+
+    align-items: flex-end;
+
+}
+
+.align-stretch{
+
+    align-items: stretch;
+
+}
+
+.align-baseline{
+
+    align-items: baseline;
+
+}
+
+
+/* ==========================================================
+   ALIGN CONTENT
+========================================================== */
+
+.content-start{
+
+    align-content: flex-start;
+
+}
+
+.content-center{
+
+    align-content: center;
+
+}
+
+.content-end{
+
+    align-content: flex-end;
+
+}
+
+.content-between{
+
+    align-content: space-between;
+
+}
+
+.content-around{
+
+    align-content: space-around;
+
+}
+
+
+/* ==========================================================
+   FLEX WRAP
+========================================================== */
+
+.flex-wrap{
+
+    flex-wrap: wrap;
+
+}
+
+.flex-nowrap{
+
+    flex-wrap: nowrap;
+
+}
+
+.flex-wrap-reverse{
+
+    flex-wrap: wrap-reverse;
+
+}
+
+
+/* ==========================================================
+   FLEX GROW / SHRINK
+========================================================== */
+
+.flex-1{
+
+    flex: 1;
+
+}
+
+.flex-auto{
+
+    flex: auto;
+
+}
+
+.flex-none{
+
+    flex: none;
+
+}
+
+
+/* ==========================================================
+   GAPS
+========================================================== */
+
+.gap-1{
+
+    gap: 8px;
+
+}
+
+.gap-2{
+
+    gap: 16px;
+
+}
+
+.gap-3{
+
+    gap: 24px;
+
+}
+
+.gap-4{
+
+    gap: 32px;
+
+}
+
+.gap-5{
+
+    gap: 48px;
+
+}
+
+.gap-6{
+
+    gap: 64px;
+
+}
+
+
+/* ==========================================================
+   FLEX HELPERS
+========================================================== */
+
+.flex-center{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.flex-between{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.flex-around{
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+}
+
+.flex-evenly{
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+}
+
+.flex-column-center{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
