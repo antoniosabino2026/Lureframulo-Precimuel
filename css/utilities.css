@@ -2703,3 +2703,368 @@
     object-position:right;
 
 }
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:var(--radius-md);
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--secondary-color);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    background:transparent;
+
+    color:var(--primary-color);
+
+    border:2px solid var(--primary-color);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+.btn-light{
+
+    background:var(--white);
+
+    color:var(--primary-color);
+
+}
+
+.btn-light:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card{
+
+    background:var(--white);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-md);
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.card-header{
+
+    padding:24px;
+
+}
+
+.card-body{
+
+    padding:24px;
+
+}
+
+.card-footer{
+
+    padding:24px;
+
+}
+
+
+/* ==========================================================
+   BADGE
+========================================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+.badge-primary{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+.badge-success{
+
+    background:var(--success-color);
+
+    color:var(--white);
+
+}
+
+.badge-warning{
+
+    background:var(--warning-color);
+
+    color:var(--white);
+
+}
+
+
+/* ==========================================================
+   TAG
+========================================================== */
+
+.tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:var(--gray-100);
+
+    color:var(--gray-700);
+
+    font-size:.9rem;
+
+}
+
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--gray-300);
+
+}
+
+
+/* ==========================================================
+   SECTION HEADER
+========================================================== */
+
+.section-header{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.section-title{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    margin-bottom:20px;
+
+    color:var(--gray-900);
+
+}
+
+.section-description{
+
+    color:var(--gray-600);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.form-group{
+
+    margin-bottom:24px;
+
+}
+
+.input{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid var(--gray-300);
+
+    border-radius:var(--radius-md);
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+.input:focus{
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 0 4px rgba(0,102,255,.15);
+
+}
+
+
+/* ==========================================================
+   ALERT
+========================================================== */
+
+.alert{
+
+    padding:18px 24px;
+
+    border-radius:var(--radius-md);
+
+    margin-bottom:20px;
+
+}
+
+.alert-success{
+
+    background:#d4edda;
+
+    color:#155724;
+
+}
+
+.alert-warning{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+}
+
+.alert-danger{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+}
+
+
+/* ==========================================================
+   CHIP
+========================================================== */
+
+.chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:var(--gray-200);
+
+}
+
+
+/* ==========================================================
+   LOADER
+========================================================== */
+
+.loader{
+
+    width:40px;
+
+    height:40px;
+
+    border:4px solid var(--gray-300);
+
+    border-top-color:var(--primary-color);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}

@@ -1,0 +1,84 @@
+Sprint 1 — Estrutura do Site (MVP)
+✅ Página Inicial (index.html) — praticamente pronta.
+🔜 Sobre Nós (sobre.html)
+🔜 Cursos (cursos.html)
+🔜 Notícias (noticias.html)
+🔜 Contacto (contacto.html)
+🔜 Área do Estudante (estudante.html)
+🔜 Inscrições (inscricao.html)
+
+No final desta sprint, já tens um site completo para apresentar.
+
+Sprint 2 — Melhorias Visuais
+Refatorar HTML.
+Limpar CSS.
+Aplicar utilities.css.
+Criar animações.
+Melhorar UX.
+
+Sprint 3 — Funcionalidades
+Formulário de contacto.
+Pesquisa de cursos.
+Slider.
+Contadores.
+Galeria.
+FAQ.
+Área do estudante.
+
+Sprint 4 — Backend
+PHP.
+MySQL.
+Login.
+Painel administrativo.
+Notícias dinâmicas.
+Inscrições online.
+
+
+
+sobre.html
+Hero da página.
+História do instituto.
+Missão.
+Visão.
+Valores.
+Mensagem da Direção.
+Instalações.
+Linha do tempo.
+CTA.
+
+cursos.html
+Hero.
+Pesquisa.
+Filtros.
+Card de cada curso.
+Modal "Saiba Mais".
+CTA para inscrição.
+
+noticias.html
+Hero.
+Notícias em destaque.
+Notícias recentes.
+Pesquisa.
+Categorias.
+Paginação.
+
+contacto.html
+Hero.
+Contactos.
+Formulário.
+Mapa.
+Horário.
+Redes sociais.
+
+
+<div class="hero-layout">
+
+    <div class="hero-content">
+
+    </div>
+
+    <div class="hero-media">
+
+    </div>
+
+</div>
