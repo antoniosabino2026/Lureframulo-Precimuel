@@ -3,18 +3,18 @@
    ATÉ 992px
 ========================================================== */
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
 
     /* ================= HEADER ================= */
 
 
-    .header-buttons{
+    .header-buttons {
 
         display: none;
 
     }
 
-    .menu-toggle{
+    .menu-toggle {
 
         display: block;
 
@@ -22,13 +22,13 @@
 
     /* ================= HERO ================= */
 
-    .hero{
+    .hero {
 
         padding: 80px 0;
 
     }
 
-    .hero-container{
+    .hero-container {
 
         grid-template-columns: 1fr;
 
@@ -36,13 +36,13 @@
 
     }
 
-    .hero-content{
+    .hero-content {
 
         order: 2;
 
     }
 
-    .hero-image{
+    .hero-image {
 
         order: 1;
 
@@ -52,13 +52,13 @@
 
     }
 
-    .hero-buttons{
+    .hero-buttons {
 
         justify-content: center;
 
     }
 
-    .hero-stats{
+    .hero-stats {
 
         justify-content: center;
 
@@ -66,7 +66,7 @@
 
     /* ================= SOBRE ================= */
 
-    .sobre-container{
+    .sobre-container {
 
         grid-template-columns: 1fr;
 
@@ -74,71 +74,71 @@
 
     /* ================= ESTATÍSTICAS ================= */
 
-    .estatisticas .container{
+    .estatisticas .container {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
     /* ================= CURSOS ================= */
 
-    .cards-cursos{
+    .cards-cursos {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
     /* ================= DIFERENCIAIS ================= */
 
-    .diferenciais-grid{
+    .diferenciais-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
     /* ================= SERVIÇOS ================= */
 
-    .servicos-grid{
+    .servicos-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
     /* ================= NOTÍCIAS ================= */
 
-    .noticias-grid{
+    .noticias-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
     /* ================= GALERIA ================= */
 
-    .galeria-grid{
+    .galeria-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
     /* ================= PARCEIROS ================= */
 
-    .parceiros-grid{
+    .parceiros-grid {
 
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
 
     }
 
     /* ================= TESTEMUNHOS ================= */
 
-    .testemunhos-grid{
+    .testemunhos-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
     /* ================= CONTACTO ================= */
 
-    .contacto-container{
+    .contacto-container {
 
         grid-template-columns: 1fr;
 
@@ -146,41 +146,42 @@
 
     /* ================= FOOTER ================= */
 
-    .footer-grid{
+    .footer-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
 }
+
 /* ==========================================================
    TABLETS PEQUENOS
    ATÉ 768px
 ========================================================== */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
     /* ================= GERAL ================= */
 
-    section{
+    section {
 
         padding: 70px 0;
 
     }
 
-    .container{
+    .container {
 
         width: 92%;
 
     }
 
-    .section-title h2{
+    .section-title h2 {
 
         font-size: 2.2rem;
 
     }
 
-    .section-title p{
+    .section-title p {
 
         width: 100%;
 
@@ -188,7 +189,7 @@
 
     /* ================= TOP BAR ================= */
 
-    .top-bar{
+    .top-bar {
 
         display: none;
 
@@ -196,25 +197,25 @@
 
     /* ================= HEADER ================= */
 
-    .header{
+    .header {
 
         height: 80px;
 
     }
 
-    .logo img{
+    .logo img {
 
         width: 55px;
 
     }
 
-    .logo-text h2{
+    .logo-text h2 {
 
         font-size: 1.2rem;
 
     }
 
-    .logo-text p{
+    .logo-text p {
 
         font-size: .75rem;
 
@@ -222,25 +223,25 @@
 
     /* ================= HERO ================= */
 
-    .hero{
+    .hero {
 
         min-height: auto;
 
     }
 
-    .hero-content h1{
+    .hero-content h1 {
 
         font-size: 2.5rem;
 
     }
 
-    .hero-content p{
+    .hero-content p {
 
         font-size: 1rem;
 
     }
 
-    .hero-buttons{
+    .hero-buttons {
 
         flex-direction: column;
 
@@ -248,7 +249,7 @@
 
     }
 
-    .hero-buttons a{
+    .hero-buttons a {
 
         width: 100%;
 
@@ -256,7 +257,7 @@
 
     }
 
-    .hero-stats{
+    .hero-stats {
 
         flex-wrap: wrap;
 
@@ -266,7 +267,7 @@
 
     /* ================= SOBRE ================= */
 
-    .sobre-list{
+    .sobre-list {
 
         grid-template-columns: 1fr;
 
@@ -281,7 +282,7 @@
     .galeria-grid,
     .testemunhos-grid,
     .parceiros-grid,
-    .estatisticas .container{
+    .estatisticas .container {
 
         grid-template-columns: 1fr;
 
@@ -289,13 +290,13 @@
 
     /* ================= CTA ================= */
 
-    .cta-content h2{
+    .cta-content h2 {
 
         font-size: 2rem;
 
     }
 
-    .cta-buttons{
+    .cta-buttons {
 
         flex-direction: column;
 
@@ -303,7 +304,7 @@
 
     }
 
-    .cta-buttons a{
+    .cta-buttons a {
 
         width: 100%;
 
@@ -313,7 +314,7 @@
 
     /* ================= FOOTER ================= */
 
-    .footer-grid{
+    .footer-grid {
 
         grid-template-columns: 1fr;
 
@@ -321,7 +322,7 @@
 
     }
 
-    .footer-social{
+    .footer-social {
 
         justify-content: center;
 
@@ -335,29 +336,29 @@
    ATÉ 576px
 ========================================================== */
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
 
     /* ================= GERAL ================= */
 
-    h1{
+    h1 {
 
         font-size: 2rem;
 
     }
 
-    h2{
+    h2 {
 
         font-size: 1.8rem;
 
     }
 
-    h3{
+    h3 {
 
         font-size: 1.3rem;
 
     }
 
-    p{
+    p {
 
         font-size: .95rem;
 
@@ -366,7 +367,7 @@
     /* ================= BOTÕES ================= */
 
     .btn-primary,
-    .btn-secondary{
+    .btn-secondary {
 
         width: 100%;
 
@@ -376,25 +377,25 @@
 
     /* ================= HERO ================= */
 
-    .hero{
+    .hero {
 
         padding: 60px 0;
 
     }
 
-    .hero-content h1{
+    .hero-content h1 {
 
         font-size: 2rem;
 
     }
 
-    .hero-tag{
+    .hero-tag {
 
         font-size: .8rem;
 
     }
 
-    .hero-stats{
+    .hero-stats {
 
         flex-direction: column;
 
@@ -407,7 +408,7 @@
     .curso-info,
     .noticia-content,
     .servico-card,
-    .testemunho-card{
+    .testemunho-card {
 
         padding: 25px;
 
@@ -415,7 +416,7 @@
 
     /* ================= CONTACTO ================= */
 
-    .info-card{
+    .info-card {
 
         flex-direction: column;
 
@@ -423,7 +424,7 @@
 
     }
 
-    .contact-form button{
+    .contact-form button {
 
         width: 100%;
 
@@ -431,7 +432,7 @@
 
     /* ================= MAPA ================= */
 
-    .mapa iframe{
+    .mapa iframe {
 
         height: 300px;
 
@@ -439,7 +440,7 @@
 
     /* ================= BOTÃO TOPO ================= */
 
-    #backToTop{
+    #backToTop {
 
         width: 48px;
 
