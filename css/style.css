@@ -2384,7 +2384,11 @@ MENU MOBILE PREMIUM
    SOBRE
 ========================================================== */
 
-.page-hero {}
+.page-hero-buttons {
+    display: flex;
+    padding-top: 15px;
+    gap: 20px;
+}
 
 .history-content {
     gap: 20px;
@@ -2400,6 +2404,10 @@ MENU MOBILE PREMIUM
     padding-top: 50px;
 }
 
+.fa-solid,
+.fas {
+    font-size: 2.5rem;
+}
 
 .mission {}
 
