@@ -167,9 +167,6 @@ p {
 
 }
 
-.page-hero-buttons .btn-primary {
-    width: ;
-}
 
 .header-buttons .btn-primary {
     width: 170px;
@@ -771,7 +768,8 @@ MENU MOBILE PREMIUM
 }
 
 .hero-container,
-.page-hero-content {
+.page-hero-content,
+.history-content {
 
     display: grid;
 
@@ -921,7 +919,7 @@ MENU MOBILE PREMIUM
 }
 
 .sobre-container,
-.history-content {
+.history-highlights {
 
     display: grid;
 
@@ -1027,7 +1025,8 @@ MENU MOBILE PREMIUM
 
 }
 
-.estatisticas .container {
+.estatisticas .container,
+.history-highlights {
 
     display: grid;
 
@@ -1037,7 +1036,8 @@ MENU MOBILE PREMIUM
 
 }
 
-.estatistica-card {
+.estatistica-card,
+.highlight-card {
 
     background: rgba(255, 255, 255, .08);
 
@@ -2386,7 +2386,20 @@ MENU MOBILE PREMIUM
 
 .page-hero {}
 
-.history {}
+.history-content {
+    gap: 20px;
+}
+
+.history-text p {
+    padding-top: 10px;
+}
+
+.history-highlights {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+}
+
 
 .mission {}
 
