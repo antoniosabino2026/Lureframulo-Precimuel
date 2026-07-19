@@ -2398,6 +2398,10 @@ MENU MOBILE PREMIUM
     padding-top: 10px;
 }
 
+.history-text .section-tag {
+    margin: 0 35% 0;
+}
+
 .history-highlights {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
