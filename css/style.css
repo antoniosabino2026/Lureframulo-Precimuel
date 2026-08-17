@@ -792,6 +792,8 @@ MENU MOBILE PREMIUM
 
     padding: 10px 18px;
 
+    margin: 40% 40%;
+
     background: rgba(60, 145, 230, .15);
 
     color: var(--secondary-color);
@@ -801,6 +803,10 @@ MENU MOBILE PREMIUM
     font-weight: 700;
 
     margin-bottom: 25px;
+
+    display: flex;
+
+    justify-content: center;
 
 }
 
@@ -2380,9 +2386,10 @@ MENU MOBILE PREMIUM
 }
 
 
+
 /* ==========================================================
-   SOBRE
-========================================================== */
+    SOBRE
+=============================================================*/
 
 .page-hero-buttons {
     display: flex;
